@@ -26,11 +26,13 @@ function App() {
 
   return (
     <div>
-      {state && <h1>Кируу</h1>}
+      {state && <h1>kireimi</h1>}
+
       <button onClick={() => setState(!state)}>
-        {state ? "чыгууга" : "кируу"}
+        {state ? "kir " : "chyk"}
       </button>
     </div>
   );
 }
+
 export default App;
