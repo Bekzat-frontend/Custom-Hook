@@ -11,9 +11,6 @@ function App() {
       <button onClick={plus}>+</button>
       <h2>{priverder}</h2>
       <button onClick={minus}>-</button>
-      <button onClick={plus1}>+</button>
-      <h2>{priverder1}</h2>
-      <button onClick={minus1}>-</button>
     </div>
   );
 }
