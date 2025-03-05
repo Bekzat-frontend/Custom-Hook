@@ -19,20 +19,3 @@
 // }
 
 // export default App;
-import React, { useState } from "react";
-
-function App() {
-  const [state, setState] = useState(false);
-
-  return (
-    <div>
-      {state && <h1>kireimi</h1>}
-
-      <button onClick={() => setState(!state)}>
-        {state ? "kir " : "chyk"}
-      </button>
-    </div>
-  );
-}
-
-export default App;
