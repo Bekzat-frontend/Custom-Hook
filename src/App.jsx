@@ -19,21 +19,18 @@
 // }
 
 // export default App;
-
 import React, { useState } from "react";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [state, setState] = useState(false);
 
   return (
     <div>
-      {isLoggedIn ? (
-        <h1>Кош келди, колдонуучу!</h1>
-      ) : (
-        <button onClick={() => setIsLoggedIn(true)}>Кирүү</button>
-      )}
+      {state && <h1>Кируу</h1>}
+      <button onClick={() => setState(!state)}>
+        {state ? "чыгууга" : "кируу"}
+      </button>
     </div>
   );
 }
-
 export default App;
